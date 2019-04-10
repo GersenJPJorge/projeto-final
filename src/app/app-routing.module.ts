@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 export const routes: Routes = [
-/*	{ 
+	{ 
 		path: '',                                   // na inicialização ou se não for digitado nada na url
 		redirectTo: '/dashboard', 
 		pathMatch: 'full'                           // passa a url completa
-    },
-    */
+    },   
 ];
 
 @NgModule({
