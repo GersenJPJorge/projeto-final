@@ -8,18 +8,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { NumeroDirective } from './directives';
 import { ModalCotacaoComponent } from './utils';
 import { DataBrPipe } from './pipes';
+import { ConversorRoutingModule } from './conversor-routing.modules';
+import { ConversorRoutingComponent } from './conversor-routing.component';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
+    ConversorRoutingModule,
   ],
   declarations: [
   	ConversorComponent,
   	NumeroDirective,
   	ModalCotacaoComponent,
-  	DataBrPipe,
+    DataBrPipe,
+    ConversorRoutingComponent,
   ],
   exports: [                                              // se usar rotas tem que ter o exports
   	ConversorComponent,
