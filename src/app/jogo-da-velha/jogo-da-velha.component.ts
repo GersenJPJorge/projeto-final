@@ -46,9 +46,11 @@ export class JogoDaVelhaComponent implements OnInit {
    *
    * @return void
    */
-  iniciarJogo(): void {
-  	this.jogoDaVelhaService.iniciarJogo();
+  iniciarJogo($event: any): void {
+  	  $event.preventDefault();
+  	  this.jogoDaVelhaService.iniciarJogo();
   }
+    
 
   /**
    * Realiza uma jogada ao clicar um local no tabuleiro.
@@ -111,8 +113,8 @@ export class JogoDaVelhaComponent implements OnInit {
    * 
    * @return void
    */
-  novoJogo(): void {
-  	this.jogoDaVelhaService.novoJogo();
-  
+novoJogo($event): void {
+	  $event.preventDefault();
+	  this.jogoDaVelhaService.novoJogo();
   }
 }
